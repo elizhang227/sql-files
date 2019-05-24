@@ -2,11 +2,13 @@ drop table review_table;
 
 create table review_table
 (
+    id SERIAL,
     reviewer_id integer,
     stars integer,
     title text,
     review text,
-    restaurant_id integer
+    restaurant_id integer,
+    primary key (id, reviewer_id, restaurant_id)
 );
 
 INSERT INTO review_table
@@ -21,4 +23,4 @@ VALUES
     (3, 4, 'I CANT WAIT TO COME BACK', 'Bacon ipsum dolor amet kielbasa meatball bacon pork ham hock burgdoggen, tri-tip shoulder tail. Capicola pork porchetta chicken bacon frankfurter. Swine pork loin biltong, ham hock ground round tenderloin beef pig cow venison turkey sausage shoulder ball tip. Rump tri-tip swine spare ribs. Pork chop flank buffalo burgdoggen frankfurter pancetta alcatra ribeye ball tip.', 1),
     (10, 5, 'TERRIBLE SERVICE', 'Bacon ipsum dolor amet kielbasa meatball bacon pork ham hock burgdoggen, tri-tip shoulder tail. Capicola pork porchetta chicken bacon frankfurter. Swine pork loin biltong, ham hock ground round tenderloin beef pig cow venison turkey sausage shoulder ball tip. Rump tri-tip swine spare ribs. Pork chop flank buffalo burgdoggen frankfurter pancetta alcatra ribeye ball tip.', 7),
     (5, 3, 'TERRIBLE SERVICE', 'Bacon ipsum dolor amet kielbasa meatball bacon pork ham hock burgdoggen, tri-tip shoulder tail. Capicola pork porchetta chicken bacon frankfurter. Swine pork loin biltong, ham hock ground round tenderloin beef pig cow venison turkey sausage shoulder ball tip. Rump tri-tip swine spare ribs. Pork chop flank buffalo burgdoggen frankfurter pancetta alcatra ribeye ball tip.', 10),
-    (1, 3, 'GREAT PLACE', 'Bacon ipsum dolor amet kielbasa meatball bacon pork ham hock burgdoggen, tri-tip shoulder tail. Capicola pork porchetta chicken bacon frankfurter. Swine pork loin biltong, ham hock ground round tenderloin beef pig cow venison turkey sausage shoulder ball tip. Rump tri-tip swine spare ribs. Pork chop flank buffalo burgdoggen frankfurter pancetta alcatra ribeye ball tip.', 3);
+    (1, 3, 'GREAT PLACE', 'BBBBBacon ipsum dolor amet kielbasa meatball bacon pork ham hock burgdoggen, tri-tip shoulder tail. Capicola pork porchetta chicken bacon frankfurter. Swine pork loin biltong, ham hock ground round tenderloin beef pig cow venison turkey sausage shoulder ball tip. Rump tri-tip swine spare ribs. Pork chop flank buffalo burgdoggen frankfurter pancetta alcatra ribeye ball tip.', 3);

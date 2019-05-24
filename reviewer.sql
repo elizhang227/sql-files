@@ -2,6 +2,7 @@ drop table reviewer;
 
 create table reviewer
 (
+    id SERIAL primary key,
     name_reviewer text,
     email text,
     karma integer

@@ -19,4 +19,12 @@
 
 -- RESTAURANTSv2 EXERCISES --
 
-select 
+-- select review from review_table where restaurant_id = 5;
+
+-- select review from review_table UNION select name_resto from restaurantv2 where name_resto = 'The Wild Tree';
+
+--select review from review_table UNION select name_reviewer from reviewer where name_reviewer = 'Marian Carter';
+
+--select review from review_table UNION select name_resto from restaurantv2;
+
+select review from review_table UNION select name_resto from restaurantv2 where name_resto = 'The Greek Oriental';
