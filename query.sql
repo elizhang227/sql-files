@@ -27,4 +27,6 @@
 
 --select review from review_table UNION select name_resto from restaurantv2;
 
-select review from review_table UNION select name_resto from restaurantv2 where name_resto = 'The Greek Oriental';
+-- select review from review_table UNION select name_resto from restaurantv2 where name_resto = 'The Greek Oriental';
+
+select name_resto from restaurantv2 UNION select to_char(avg(stars), '9') from review_table; 
